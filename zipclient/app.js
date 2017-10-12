@@ -79,5 +79,18 @@ $('form').submit(function(e) {
 })
 
 
+$('form').submit(function(e) {
+
+    $.ajax({
+         type: 'GET',
+         url: 'http://localhost:4000/memory',
+         dataType: 'json',
+         success: function(data) {
+
+
+         }
+    })
+
+})
 
 
